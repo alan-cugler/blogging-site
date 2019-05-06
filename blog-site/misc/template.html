@@ -1,0 +1,50 @@
+/* html/jinja page */
+/////////////////////
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ this.tab_title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ '/kiosk.css'|asseturl }}">
+  </head>
+
+  <body class="main" onLoad="loaded();">
+    <div class="mainTitleDiv">
+      <h1>{{ this.page_title }}</h1>
+    </div>
+
+    {% include "button.html" %}
+
+    <div style="clear: both;">
+      <p align=center>
+	<img src="{{ this.logo }}" class="mainlogo">
+      </p>
+    </div>
+
+  </body>
+</html>
+
+/////////////////////////////////////
+/* template related to a flowblock */
+/////////////////////////////////////
+
+{% for button in this.buttons.blocks %}
+	    <a href="{{ button.link }}">
+              <div class="outer_navigation">
+                <div class="inner_navigation">
+                  <img src="{{ button.thumbnail }}" class="thumb_size">
+                </div>
+                {{ button.text }}
+              </div>
+	    </a>
+{% endfor %}
+
+/////////////////////////////////
+/* combining several templates */
+/////////////////////////////////
+
+{% extends "sidebar.html" %}
+
+{% block body_content %}
+  {% include "iframes.html" %}
+{% endblock %}

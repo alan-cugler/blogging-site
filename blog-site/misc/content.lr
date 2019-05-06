@@ -1,0 +1,26 @@
+_model: mainLayout                //System field
+---
+_template: mainLayout.html        //System field
+---
+tab_title: AOC Kiosk              //Text field
+---
+logo: aoclogo.png                 //attachment field
+---
+buttons:                          //Flowblock section below
+#### button ####
+thumbnail: people.png
+----
+text: Find an AOC small group
+----
+link: groups
+################                 //added for separation
+---
+urllink: https://google.com      //url linking field
+---
+paragraph:                       //markdown field
+
+<p> stuff <p>
+<p> yay <p>
+---
+link: /                          //file link field
+---
