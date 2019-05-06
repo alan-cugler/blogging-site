@@ -1,47 +1,28 @@
 
 $body-font: Verdana, sans-serif
 
-$anchor-color: #2a99b6
-$anchor-hover-color: #33bbdf
-$background-color: #daeef3
-$header-color: #169bbd
-$div-background-color: #f1fbfe
-$body-background-color: #959e79
+$bg: #88a55c
+$logo-bg: #3a3001
+$header-bg: #0a3f05
 
-a
-  color: $anchor-color
+*
+  padding: 0
+  margin: 0
 
-a:hover
-  color: $anchor-hover-color
+html
+  background: $bg
 
-header
-  footer
-    div.page
-      width: 760px
-      margin: 0 auto
-      background: $background-color
-      padding: 20px 30px
+.header
+  position: fixed
+  width: 100%
+  background: $header-bg
 
-  h1
-    color: $header-color
-    margin: 0
-    font-weight: normal
-    font-size: 42px
+.pp
+  align-content: center
+  width: 16%
+  margin: auto
 
-  nav
-    ul
-      list-style: none
-      margin: 0
-      padding: 0
-      li
-        display: inline
-        margin: 0 8px 0 0
-        padding: 0
-
-body
-  font-family: $body-font
-  margin: 50px 25px
-  background: $body-background-color
-
-div.page
-  background: $div-background-color
+.footer
+  position: absolute
+  width: 100%
+  background-color: #efefef
