@@ -1,5 +1,9 @@
-_model: base
+_model: homepage
 ---
-_template: base.html
+_template: homepage.html
 ---
-tab_title: Home page
+copy_right: Alan Cugler
+---
+logo: cugler-services.svg
+---
+tab_title: Homepage
